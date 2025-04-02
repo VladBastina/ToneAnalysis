@@ -1,0 +1,9 @@
+*.wav
+!default_audio.wav
+*.json
+*.txt
+!requirements.txt
+!packages.txt
+sentence_segments
+*.py
+!app.py
