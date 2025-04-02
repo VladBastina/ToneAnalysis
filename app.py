@@ -261,7 +261,7 @@ elif input_method == "Record Audio":
 
 
 # --- ADDED Logic for Default Example ---
-elif input_method == "Use Default Example":
+elif input_method == "Use Default Example (Customer support call)":
     default_file_path = DEFAULT_AUDIO_FILENAME
     # Check if the default file exists in the script's directory
     if os.path.exists(default_file_path):
