@@ -8,9 +8,26 @@ import io
 import tempfile
 import json
 from pydub import AudioSegment # Used to ensure WAV format if needed
+from pathlib import Path
 
 # --- Configuration ---
 st.set_page_config(layout="wide", page_title="Audio Sentiment Analysis")
+
+
+def load_css(file_name):
+    """Loads a CSS file and injects it into the Streamlit app."""
+    try:
+        css_path = Path(__file__).parent / file_name
+        with open(css_path) as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+        # st.info(f"Loaded CSS: {file_name}") # Optional: uncomment for debugging
+    except FileNotFoundError:
+        st.error(f"CSS file not found: {file_name}. Make sure it's in the same directory as app.py.")
+    except Exception as e:
+        st.error(f"Error loading CSS file {file_name}: {e}")
+        
+load_css("style.css")
+
 st.title("🗣️ Audio Sentiment Analysis with Gemini")
 st.markdown("""
 Upload a WAV file, record new audio, or use the default example. The app will use Google's Gemini model
