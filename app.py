@@ -28,7 +28,7 @@ def load_css(file_name):
         
 load_css("style.css")
 
-st.title("🗣️ Audio Sentiment Analysis with Gemini")
+st.title("🗣️ Audio Sentiment Analysis")
 st.markdown("""
 Upload a WAV file, record new audio, or use the default example. The app will use Google's Gemini model
 to analyze the sentiment, focusing on the customer if it detects a support call.
