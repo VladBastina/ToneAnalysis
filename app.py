@@ -35,8 +35,7 @@ load_css("style.css")
 
 st.title("🗣️ Audio Sentiment Analysis")
 st.markdown("""
-Upload a WAV file, record new audio, or use the default example. The app will use Google's Gemini model
-to analyze the sentiment, focusing on the customer if it detects a support call.
+Upload a WAV file, record new audio, or use the default example. The app will analyse the sentiment, focusing on the customer if it detects a support call.
 """)
 
 # --- Default File Configuration ---

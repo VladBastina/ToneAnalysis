@@ -7,3 +7,4 @@
 sentence_segments
 *.py
 !app.py
+.streamlit/secrets.toml
