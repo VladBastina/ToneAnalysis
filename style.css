@@ -1,0 +1,72 @@
+body {
+	font-family: 'Inter Tight', Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	text-align: left !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+	font-family: "Space Grotesk", sans-serif !important;
+  font-optical-sizing: auto !important;
+	font-weight: 500 !important;
+  font-style: normal !important;
+}
+h1, h2 {
+	letter-spacing: -2px !important;
+}
+h1 {
+	font-size: 34px !important;
+}
+h2 {
+	font-size: 21px !important;
+}
+h3 {
+	font-size: 17px !important;
+}
+h4 {
+	font-size: 14px !important;
+}
+
+/* Butoane */
+
+button {
+	font-weight: 600 !important;
+}
+button:hover {
+	color: #FA6C03 !important;
+	border-color: #FA6C03 !important;
+}
+button:focus {
+	color: #fff !important;
+	background-color: #FA6C03 !important;
+}
+
+/* Buton sidebar */
+[data-testid="stSidebar"] .stButton>button {
+	background-color: #4169E1 !important;
+}
+
+/* Bara loading */
+.st-emotion-cache-1dp5vir {
+	background-image: linear-gradient(90deg, rgb(65, 105, 225), rgb(0, 255, 255)) !important;
+}
+
+/* Bara stanga */
+.st-emotion-cache-vmpjyt {
+	background-color: #f5f5f5 !important;
+}
+
+/* Select */
+.st-ae {
+	font-family: inherit !important;
+}
+
+/* File Select */
+.st-emotion-cache-1gulkj5 {
+	background-color: #f5f5f5 !important;
+}
+
+/* Other fonts */
+p {
+	font-family: 'Inter Tight', Arial, Helvetica, sans-serif !important;
+}

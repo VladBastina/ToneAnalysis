@@ -26,6 +26,11 @@ def load_css(file_name):
     except Exception as e:
         st.error(f"Error loading CSS file {file_name}: {e}")
         
+st.markdown("""
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+""", unsafe_allow_html=True)        
 load_css("style.css")
 
 st.title("🗣️ Audio Sentiment Analysis")
@@ -55,7 +60,14 @@ except Exception as e:
     st.stop()
 
 
-st.sidebar.image("zega_logo.PNG",use_container_width=True)
+logo_path = "zega_logo.svg"
+if os.path.exists(logo_path):
+    with open(logo_path, "r", encoding="utf-8") as f:
+        svg_content = f.read()
+            
+    st.sidebar.markdown(svg_content,unsafe_allow_html=True)
+else:
+    st.sidebar.warning("Logo zega_logo.PNG not found.")
 # --- Function Definitions (Keep analyze_audio, detailed_sentiment_prompt, plot_sentiment_timeline as before) ---
 
 def detailed_sentiment_prompt(is_customer_support=None, customer_focus=False):
