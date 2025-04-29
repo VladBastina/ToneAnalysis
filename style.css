@@ -29,14 +29,17 @@ h4 {
 
 /* Butoane */
 
-button {
+button,
+.myButton {
 	font-weight: 600 !important;
 }
-button:hover {
+button:hover,
+.myButton:hover {
 	color: #FA6C03 !important;
 	border-color: #FA6C03 !important;
 }
-button:focus {
+button:focus,
+.myButton:focus {
 	color: #fff !important;
 	background-color: #FA6C03 !important;
 }
@@ -57,7 +60,8 @@ button:focus {
 }
 
 /* Select */
-.st-ae {
+.st-ae,
+.st-az {
 	font-family: inherit !important;
 }
 
@@ -67,6 +71,6 @@ button:focus {
 }
 
 /* Other fonts */
-p {
-	font-family: 'Inter Tight', Arial, Helvetica, sans-serif !important;
+[class^="st-emotion-cache-"] {
+  font-family: 'Inter Tight', Arial, Helvetica, sans-serif !important;
 }
